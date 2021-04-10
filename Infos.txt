@@ -1,0 +1,43 @@
+Header :
+    - Présentation
+    - Mes compétences
+    - Mon parcours scolaire
+    - Mes centres d'intérêt
+    - Mes Hobbies
+
+
+
+"Accueil" : 
+"Bienvenue sur mon site CV. Il a pour but de me présenter et de présenter mes compétences."
+
+Ma Présentation :
+"Je m'appelle Nicolas HOARAU, je suis actuellement en BTS Systèmes Numériques option Informatique et Réseaux. Passionné entre autre d'Informatique, j'aime créer des sites internet et des applications. C'est pourquoi dans un avenir plus ou moins proche, j'ai l'intention d'utiliser ces capacités dans le monde professionnel, et d'en faire mon métier."
+
+Mes compétences :
+
+    En rapport avec ma formation :
+
+    "Je suis capable d'installer et de configurer du matériel réseau tel qu'un NAS, un routeur ou un switch.
+    Je suis aussi capable de créer des sites internet via les languages HTML et CSS, et bientôt de les donner plus de vie via le JavaScript.
+    Je suis aussi capable de créer des applications console simples avec le language de programmation C++. J'ai pour objectif plus ou moins proche de créer des applications graphiques avec SFML. De plus à plus long terme je compte apprendre à créer des jeux avec Unreal Engine.
+    Je suis capable de coder en Python."
+
+    En plus de ma formation :
+
+    "Je suis capable de faire des montages vidéos simples avec un rendu proche du professionnel avec l'application DaVinci Resolve. ..."
+
+Mon parcours scolaire :
+"En cours : BTS Systèmes Numériques option Informatique et Réseaux
+Bac Scientifique option Sciences de la Vie et de la Terre spécialité Mathématiques
+Brevet des collèges mention Bien"
+
+Mes centres d'intérêt / Hobbies:
+"J'aime :
+    - Apprendre et me perfectionner notemment dans l'Informatique, mais aussi dans les autres domaines de la vie.
+    - Pratiquer le human beatbox amateur
+    - Pratiquer l'Aïkido (art martial) niveau : 1er dan (ceinture noire)
+    - Faire du sport, comme la natation, la musculation, et découvrir de nouvelles pratiques sportives
+    - Ecouter de la musique (j'aimerais aussi apprendre à composer de la musqiue sur ordinateur)
+    - Me tenir courant des progrès scientifiques surtout dans le domaine de la physique des particules
+    - Jouer aux jeux vidéos
+    - Faire la cuisine"
