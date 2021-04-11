@@ -7,18 +7,21 @@
     <title>HOARAU Nicolas</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 </head>
 <body>
     <header>
         <nav>
+            <a id="logo" href="#">Nicolas HOARAU</a>
             <ul>
-                <li id="logo"><a href="#">Nicolas HOARAU</a></li>
-                <li><a href="#Presentation">Présentation</a></li>
-                <li><a href="#Competences">Mes compétences</a></li>
-                <li><a href="#Etudes">Mon parcours scolaire</a></li>
+                <li><a href="#Contact">Contacts</a></li>
                 <li><a href="#Centres_interet">Mes centres d'intérêt</a></li>
+                <li><a href="#Etudes">Mon parcours scolaire</a></li>
+                <li><a href="#Competences">Mes compétences</a></li>
+                <li><a href="#Presentation">Présentation</a></li>
             </ul>
+            <i id="menuToggle" class="fa fa-bars" aria-hidden="true"></i>
         </nav>
         <div id="accueil">
             <p>Bienvenue sur mon site CV</p>
@@ -34,38 +37,76 @@
         </div>
         <div id="Competences" class="sous_partie">
             <h2>Mes compétences</h2>
-            <p id="Competences_BTS">Je suis capable d'installer et de configurer du matériel réseau tel qu'un NAS, un routeur ou un switch.<br>
-                Je suis aussi capable de créer des sites internet via les languages HTML et CSS, et bientôt de les donner plus de vie via le JavaScript.<br>
-                Je suis aussi capable de créer des applications console simples avec le language de programmation C++. J'ai pour objectif plus ou moins proche de créer des applications graphiques avec SFML. De plus à plus long terme je compte apprendre à créer des jeux avec Unreal Engine.<br>
-                Je suis capable de coder en Python.<br>
-                Je suis particulièrement à l'aise avec les logiciels Visual Studio Code et Visual Studio.
-             </p>
-             <p id="Competences_non_BTS">[WIP] Je suis capable de faire des montages vidéos simples avec un rendu proche du professionnel avec l'application DaVinci Resolve. ...</p>
+            <div id="sous_competence">
+                <img id="Illustration_competence" src="ressources/Competences_illustration.jpg" alt="Illustration">
+                <div id="sous_sous_comp">
+                    <div id="Competences_BTS">
+                        <p>Je suis capable de :</p>
+                        <ul>
+                            <li>Installer et de configurer du matériel réseau tel qu'un NAS, un routeur ou un switch</li>
+                            <li>Créer des sites internet via les languages HTML et CSS, et bientôt de les donner plus de vie via le JavaScript</li>
+                            <li>créer des applications console simples avec le language de programmation C++. J'ai pour objectif plus ou moins proche de créer des applications graphiques avec SFML. De plus à plus long terme je compte apprendre à créer des jeux avec Unreal Engine.</li>
+                            <li>Réaliser des scripts simples en Python</li>
+                        </ul>
+                    </div>
+                    <div id="Competences_non_BTS">
+                        <p>[WIP] Je suis capable de :</p>
+                        <ul>
+                            <li>Faire des montages vidéos simples avec le logiciel DaVinci Resolve</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="Etudes" class="sous_partie">
              <h2>Mon parcours scolaire</h2>
-             <p>En cours : BTS Systèmes Numériques option Informatique et Réseaux <br>
-             Bac Scientifique option Sciences de la Vie et de la Terre spécialité Mathématiques <br>
-             Brevet des collèges mention Bien</p>
+             <ul>
+                 <li>En cours : BTS Systèmes Numériques option Informatique et Réseaux</li>
+                 <li>Bac Scientifique option Sciences de la Vie et de la Terre spécialité Mathématiques</li>
+                 <li>Brevet des collèges mention Bien</li>
+             </ul>
      </div>
         <div id="Centres_interet" class="sous_partie">
-             <h2>Mes centres d'intérêt</h2>
-             <!-- <p>J'aime :</p> -->
+             <h2>Mes centres d'intérêts</h2>
+             <p>J'aime :</p>
              <ul>
-                 J'aime :
-                 <li>Apprendre et me perfectionner notemment dans l'Informatique, mais aussi dans les autres domaines de la vie.</li>
+                 <li>Apprendre et me perfectionner notemment dans l'Informatique, mais aussi dans les autres domaines de la vie</li>
                  <li>Pratiquer le human beatbox amateur</li>
                  <li>Pratiquer l'Aïkido (art martial) niveau : 1er dan (ceinture noire)</li>
                  <li>Faire du sport, comme la natation, la musculation, et découvrir de nouvelles pratiques sportives</li>
                  <li>Ecouter de la musique (j'aimerais aussi apprendre à composer de la musqiue sur ordinateur)</li>
-                 <li>Me tenir courant des progrès scientifiques surtout dans le domaine de la physique des particules</li>
+                 <li>Me tenir au courant des progrès scientifiques surtout dans le domaine de la physique des particules</li>
                  <li>Jouer aux jeux vidéos</li>
                  <li>Faire la cuisine</li>
              </ul>
      </div>
     </main>
+    <!-- <footer class="sous_partie"> -->
     <footer>
-        <p>Il y aura des liens vers d'autres pages</p>
+        <div id="Contact">
+            <h2>Contactez moi</h2>
+            <form>
+                <input type="text" placeholder="Nom">
+                <input type="text" placeholder="Prénom">
+                <input type="email" name="email" id="email" placeholder="adresse@exemple.com">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Ce vous avez à dire ..."></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+        <div id="Separation"></div>
+        <div id="informations_complementaires">
+            <p id="mon_tel">Mon numéro de téléphone : 0692 93 25 00</p>
+            <p id="mon_mail">Mon adresse mail : h.nico.sully@gmail.com</p>
+        </div>
+        <div id="Separation"></div>
+        <div id="CopyrightEtIcons">
+            <div id="Copyright">
+                <p>Site réalisé par moi-même</p>
+            </div>
+            <div id="Icons">
+                <a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
