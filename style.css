@@ -8,7 +8,7 @@ body{
 }
 
 p, a, li{
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 a{
@@ -47,12 +47,16 @@ nav li{
     float: right;
 }
 
+nav ul{
+    padding: 0;
+}
+
 nav li a{
     text-decoration: none;
-    display: block;
     text-align: center;
-    padding: 18px 16px;
+    padding: 1.5vh 1.5vw;
     font-size: 1.2em;
+    display: block;
 }
 
 nav li a:hover{
@@ -64,7 +68,7 @@ nav li a:hover{
 
 #logo{
     float: left;
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 1vh 0.5vw;
     border: 1px solid #333333;
     border-radius: 20px;
@@ -79,6 +83,16 @@ nav li a:hover{
 
 #menuToggle{
     float: right;
+    padding: 2vh 2vw;
+    margin: 2vh 1.5vw 2vh 1.5vw;
+    cursor: pointer;
+}
+
+#menuToggle:hover{
+    color: wheat;
+    background-color: #333333;
+    border-radius: 10px;
+    transition: 0.1s ease-in-out;
 }
 
 #accueil{
@@ -88,7 +102,7 @@ nav li a:hover{
 #accueil p{
     color: white;
     text-align: center;
-    font-size: 5em;
+    font-size: 3.5em;
     text-shadow: 8px 5px 3px gray;
     font-weight: bolder;
     text-decoration: underline;
@@ -100,19 +114,25 @@ nav li a:hover{
 
 .sous_partie{
     padding-top: 5vh;
-    height: 100vh;
-    font-size: 1.4em;
+    padding-bottom: 5vh;
+    min-height: 100vh;
+    font-size: 1.3em;
+}
+
+.sous_partie p{
+    overflow: auto;
+    max-height: 50vh;
 }
 
 .sous_partie h2{
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     padding: 0;
 }
 
 /* ************************************* Présentation ************************************* */
 #photo_de_profil{
-    height: 60vh;
+    height: 50vh;
     width: auto;
     border: 3px dashed lightslategray;
     border-radius: 50%;
@@ -126,7 +146,7 @@ nav li a:hover{
 #sous_presentation{
     width: 80%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     margin-top: 5%;
     margin-left: 10%;
 }
@@ -156,6 +176,9 @@ nav li a:hover{
     margin-left: 5%;
     margin-top: 7%;
     width: 55%;
+    display: grid;
+    grid-template-columns: 1fr;
+
 }
 
 #Competences_non_BTS{
@@ -203,6 +226,7 @@ nav li a:hover{
 footer{
     background-color: lightsteelblue;
     height: 100vh;
+    padding-bottom: 3vh;
 }
 
 footer h2{
@@ -213,7 +237,7 @@ footer h2{
 }
 
 input, textarea, button{
-    font-size: large;
+    font-size: 1em;
     border: none;
     border-radius: 8px;
     display: block;
@@ -244,7 +268,7 @@ button:hover{
 
 #informations_complementaires p{
     text-align: center;
-    font-size: 2.5vh;
+    font-size: 0.9em;
 }
 
 #CopyrightEtIcons{
@@ -260,6 +284,9 @@ button:hover{
 #Icons{
     width: 50%;
     text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     padding: 1% 0;
 }
 
@@ -276,19 +303,55 @@ button:hover{
 
 /* ************************* média queries ****************************** */
 
-@media screen and (min-width: 768px){
+@media screen and (max-width: 768px){
     #sous_presentation{
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: 1fr;
     }
-    nav li{
+    .sous_partie {
+        height: fit-content;
+    }
+    #menuToggle{
+        display: inline;
+    }
+    nav ul{
         display: none;
     }
 }
-@media screen and (min-width: 1024px){
+@media screen and (max-width: 1024px){
+    #menuToggle{
+        display: inline;
+    }
+    #sous_presentation, #sous_competence {
+        grid-template-columns: 1fr;
+    }
+    #sous_presentation *, #sous_competence *{
+        margin: 1vh auto;
+    }
+    #Illustration_competence{
+        margin: 1vh 25vw;
+    }
+    nav ul {
+        display: none;
+    }
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+@media screen and (min-width: 1024px) {
     #menuToggle{
         display: none;
     }
-    nav li{
-        display: grid;
+    #sous_presentation {
+        grid-template-columns: 1fr 3fr;
+    }
+    #sous_comp{
+        grid-template-columns: 3fr 1fr;
+    }
+    nav ul{
+        display: flex;
+        align-items: center;
     }
 }
