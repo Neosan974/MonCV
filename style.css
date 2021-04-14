@@ -28,7 +28,7 @@ a{
 /* ************************************* Header ****************************************** */
 
 header{
-    background: url("/ressources/header_bg.jpg") no-repeat 50% 50%;
+    background: url("ressources/header_bg.jpg") no-repeat 50% 50%;
     background-size: cover;
     height: 100vh;
 }
